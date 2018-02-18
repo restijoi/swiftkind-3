@@ -1,0 +1,11 @@
+*.pyc
+*.sqlite3
+*local_settings.py
+
+static/
+media/
+
+assets/fonts/
+assets/images/
+assets/scripts/core/node_modules/
+

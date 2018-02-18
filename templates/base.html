@@ -1,0 +1,29 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Swiftkind | Agile Web Development - Python, Django, AngularJS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="DC.title" content="Swiftkind | Agile Web Development - Python, Django, AngularJS">
+    <meta name="description" content="Swiftkind is a team of Python developers. Our mission is to help business and individuals to grow their businesses using the latest software technologies. ">
+    <meta name="keywords" content="Software Development, Agile, Web development, Web Design, Python, Django, Angular JS">
+    <meta name="robots" content="index,follow">
+    <meta name="theme-color" content="#ffffff">
+
+    <base href="/">
+</head>
+
+<body>
+    <app-root></app-root>
+
+    <script type="text/javascript" src="{% static 'scripts/core/dist/inline.bundle.js' %}"></script>
+    <script type="text/javascript" src="{% static 'scripts/core/dist/polyfills.bundle.js' %}"></script>
+    <script type="text/javascript" src="{% static 'scripts/core/dist/styles.bundle.js' %}"></script>
+    <script type="text/javascript" src="{% static 'scripts/core/dist/vendor.bundle.js' %}"></script>
+    <script type="text/javascript" src="{% static 'scripts/core/dist/main.bundle.js' %}"></script>
+</body>
+
+</html>
