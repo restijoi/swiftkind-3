@@ -48,6 +48,8 @@ module.exports = module.exports.toString();
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_wowjs_dist_wow_min__ = __webpack_require__("../../../../wowjs/dist/wow.min.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_wowjs_dist_wow_min___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_wowjs_dist_wow_min__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -55,10 +57,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 
+
 var AppComponent = /** @class */ (function () {
     function AppComponent() {
         this.title = 'app';
     }
+    AppComponent.prototype.ngAfterViewInit = function () { new __WEBPACK_IMPORTED_MODULE_1_wowjs_dist_wow_min__["WOW"]().init(); };
     AppComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-root',
@@ -224,7 +228,7 @@ var IncludesModule = /** @class */ (function () {
 /***/ "../../../../../src/app/public/includes/navigation/navigation.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"m-nav\">\n  <ul class=\"\">\n      <li>\n          <a uiSref=\"index\" class=\"hvr-underline-from-center\">HOME</a>\n      </li>\n      <li>\n          <a uiSref=\"about\" class=\"hvr-underline-from-center\">OUR STORY</a>\n      </li>\n      <li>\n          <a uiSref=\"process\" class=\"hvr-underline-from-center\">HOW WE WORK</a>\n      </li>\n      <li>\n          <a uiSref=\"works\" class=\"hvr-underline-from-center\">PROJECTS</a>\n      </li>\n      <li>\n          <a uiSref=\"http://blog.swiftkind.com\" class=\"hvr-underline-from-center\">JOURNAL</a>\n      </li>\n      <li>\n          <a uiSref=\"contact\" class=\"hvr-underline-from-center\">CONTACT</a>\n      </li>\n  </ul>\n</div>\n<nav class=\"navbar main-nav main-nav-sticky\">\n      <div class=\"container-fluid\">\n          <div class=\"navbar-header\">\n              <a uiSref=\"index\" class=\"navbar-brand\">\n                  <img src=\"/static/images/nav-logo.svg\" class=\"nav-logo\">\n              </a>\n          </div>\n          <ul class=\"nav navbar navbar-nav navbar-right nav-links\">\n              <li>\n                  <a uiSref=\"about\" class=\"hvr-underline-from-center\">OUR STORY</a>\n              </li>\n              <li>\n                  <a uiSref=\"process\" class=\"hvr-underline-from-center\">HOW WE WORK</a>\n              </li>\n              <li>\n                  <a uiSref=\"works\" class=\"hvr-underline-from-center\">PROJECTS</a>\n              </li>\n              <li>\n                  <a href=\"http://blog.swiftkind.com\" class=\"hvr-underline-from-center\">JOURNAL</a>\n              </li>\n              <li>\n                  <a href=\"contact\" class=\"hvr-underline-from-center\">CONTACT</a>\n              </li>\n          </ul>\n          <ul class=\"nav navbar navbar-nav navbar-right\">\n              <li>\n                  <a href=\"#\" class=\"mobile-nav\">\n                      <span class=\"bar top\"></span>\n                      <span class=\"menu\">MENU</span>\n                      <span class=\"bar bottom\"></span>\n                  </a>\n              </li>\n          </ul>\n      </div>\n</nav>"
+module.exports = "<div class=\"m-nav\">\n  <ul class=\"\">\n      <li>\n          <a uiSref=\"index\" class=\"hvr-underline-from-center\">HOME</a>\n      </li>\n      <li>\n          <a uiSref=\"about\" class=\"hvr-underline-from-center\">OUR STORY</a>\n      </li>\n      <li>\n          <a uiSref=\"process\" class=\"hvr-underline-from-center\">HOW WE WORK</a>\n      </li>\n      <li>\n          <a uiSref=\"works\" class=\"hvr-underline-from-center\">PROJECTS</a>\n      </li>\n      <li>\n          <a uiSref=\"http://blog.swiftkind.com\" class=\"hvr-underline-from-center\">JOURNAL</a>\n      </li>\n      <li>\n          <a uiSref=\"contact\" class=\"hvr-underline-from-center\">CONTACT</a>\n      </li>\n  </ul>\n</div>\n<nav class=\"navbar main-nav main-nav-sticky\">\n      <div class=\"container-fluid\">\n          <div class=\"navbar-header\">\n              <a uiSref=\"index\" class=\"navbar-brand\">\n                  <img src=\"/static/images/nav-logo.svg\" class=\"nav-logo\">\n              </a>\n          </div>\n          <ul class=\"nav navbar navbar-nav navbar-right nav-links\">\n              <li>\n                  <a uiSref=\"about\" class=\"hvr-underline-from-center\">OUR STORY</a>\n              </li>\n              <li>\n                  <a uiSref=\"process\" class=\"hvr-underline-from-center\">HOW WE WORK</a>\n              </li>\n              <li>\n              \n                  <a uiSref=\"works\" class=\"hvr-underline-from-center\">PROJECTS</a>\n              </li>\n              <li>\n                  <a href=\"http://blog.swiftkind.com\" class=\"hvr-underline-from-center\">JOURNAL</a>\n              </li>\n              <li>\n                  <a uiSref=\"contact\" class=\"hvr-underline-from-center\">CONTACT</a>\n              </li>\n          </ul>\n          <ul class=\"nav navbar navbar-nav navbar-right\">\n              <li>\n                  <a href=\"#\" class=\"mobile-nav\">\n                      <span class=\"bar top\"></span>\n                      <span class=\"menu\">MENU</span>\n                      <span class=\"bar bottom\"></span>\n                  </a>\n              </li>\n          </ul>\n      </div>\n</nav>"
 
 /***/ }),
 
