@@ -7,6 +7,7 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 import { IndexComponent } from './index/index.component';
 import { AboutComponent } from './about/about.component';
+import { ProcessComponent } from './process/process.component';
 
 @NgModule({
   imports: [
@@ -14,6 +15,6 @@ import { AboutComponent } from './about/about.component';
     UIRouterModule,
     CarouselModule
   ],
-  declarations: [IndexComponent, TypingAnimationDirective, AboutComponent]
+  declarations: [IndexComponent, TypingAnimationDirective, AboutComponent, ProcessComponent]
 })
 export class PublicModule { }
