@@ -505,12 +505,14 @@ var ProcessComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__index_index_component__ = __webpack_require__("../../../../../src/app/public/index/index.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__about_about_component__ = __webpack_require__("../../../../../src/app/public/about/about.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__process_process_component__ = __webpack_require__("../../../../../src/app/public/process/process.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__works_works_component__ = __webpack_require__("../../../../../src/app/public/works/works.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -529,10 +531,75 @@ var PublicModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_2__uirouter_angular__["UIRouterModule"],
                 __WEBPACK_IMPORTED_MODULE_4_ngx_bootstrap_carousel__["a" /* CarouselModule */]
             ],
-            declarations: [__WEBPACK_IMPORTED_MODULE_5__index_index_component__["a" /* IndexComponent */], __WEBPACK_IMPORTED_MODULE_3_angular_typing_animation__["a" /* TypingAnimationDirective */], __WEBPACK_IMPORTED_MODULE_6__about_about_component__["a" /* AboutComponent */], __WEBPACK_IMPORTED_MODULE_7__process_process_component__["a" /* ProcessComponent */]]
+            declarations: [__WEBPACK_IMPORTED_MODULE_5__index_index_component__["a" /* IndexComponent */], __WEBPACK_IMPORTED_MODULE_3_angular_typing_animation__["a" /* TypingAnimationDirective */], __WEBPACK_IMPORTED_MODULE_6__about_about_component__["a" /* AboutComponent */], __WEBPACK_IMPORTED_MODULE_7__process_process_component__["a" /* ProcessComponent */], __WEBPACK_IMPORTED_MODULE_8__works_works_component__["a" /* WorksComponent */]]
         })
     ], PublicModule);
     return PublicModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/public/works/works.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"content-wrapper\">\n    <div class=\"masthead main-masthead section\" data-section-name=\"projects\">\n        <div class=\"container main-text\">\n            <div class=\"header-content\">\n                <h3 class=\"wow fadeInUp\" data-wow-duration=\"0.5s\" data-wow-delay=\"0.5s\">\n                    STUFF WE'RE PROUD OF\n                </h3>\n                <h4>\n                    <span class=\"text-content-wrapper\">\n                        <span typingAnimation [typeSpeed]=\"30\" [startDelay]=\"800\" class=\"wow\" data-wow-duration=\"0.5s\" data-wow-delay=\"0s\">Our constant desire to build solutions using cutting-edge technologies often leads us to enjoyable experiences. </span>\n                  </span>\n                </h4>\n            </div>\n        </div>\n    </div>\n\n    <div class=\"screen-section section\" data-section-name=\"our-projects\">\n        <div class=\"section-title\">\n            <div class=\"bg-anim\">\n                <span class=\"text-anim wow\" data-wow-duration=\"0.5s\" data-wow-delay=\"0s\">LATEST WORKS</span>\n                <div class=\"anim wow\" data-wow-duration=\"0.5s\" data-wow-delay=\"0s\"></div>\n            </div>\n        </div>\n        <div class=\"container\">\n            <div class=\"row\">\n                <div class=\"col-md-6 no-padding\">\n                    <div class=\"img-wrapper blackpearl\">\n                        <div class=\"content-holder wow fadeInUp\" data-wow-duration=\"0.5s\" data-wow-delay=\"0.4s\">\n                            <div class=\"img-holder\">\n                                <img src=\"/static/images/layer-4.png\" class=\"img-responsive img1\">\n                                <img src=\"/static/images/projects/book-ipad2.png\" class=\"img-responsive img2\">\n                            </div>\n                            <div class=\"content-wrapper\">\n                                <ul class=\"techs\">\n                                    <li>\n                                        <p>UI/UX DESIGN</p>\n                                    </li>\n                                    <li>\n                                        <p>PYTHON</p>\n                                    </li>\n                                    <li>\n                                        <p>DJANGO</p>\n                                    </li>\n                                    <li>\n                                        <p>ANGULAR</p>\n                                    </li>\n                                </ul>\n                                <p class=\"title\">BOOK APP</p>\n                                <a uiSref=\"bookapp\" class=\"link-bordered hvr-sweep-to-right\">\n                                    VIEW CASE STUDIES \n                                    <img src=\"/static/images/arrow-right.svg\" class=\"arrow-sm\">\n                                </a>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"col-md-6 no-padding\">\n                    <div class=\"img-wrapper midnight\">\n                        <div class=\"content-holder wow fadeInUp\" data-wow-duration=\"0.5s\" data-wow-delay=\"0.6s\">\n                            <div class=\"img-holder\">\n                                <img src=\"/static/images/layer-5.png\" class=\"img-responsive img1\">\n                                <img src=\"/static/images/tracker-1.png\" class=\"img-responsive img2\">\n                            </div>\n                            <div class=\"content-wrapper\">\n                                <ul class=\"techs\">\n                                    <li>\n                                        <p>UI/UX DESIGN</p>\n                                    </li>\n                                    <li>\n                                        <p>PYTHON</p>\n                                    </li>\n                                    <li>\n                                        <p>DJANGO</p>\n                                    </li>\n                                    <li>\n                                        <p>ANGULAR</p>\n                                    </li>\n                                </ul>\n                                <p class=\"title\">TRACKR.</p>\n                                <a href=\"{% url 'trackr\" class=\"link-bordered hvr-sweep-to-right\">\n                                    VIEW CASE STUDIES \n                                    <img src=\"/static/images/arrow-right.svg\" class=\"arrow-sm\">\n                                </a>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"col-md-6 no-padding\">\n                    <div class=\"img-wrapper midnight\">\n                        <div class=\"content-holder wow fadeInUp\" data-wow-duration=\"0.5s\" data-wow-delay=\"0.8s\">\n                            <div class=\"img-holder\">\n                                <img src=\"/static/images/layer-6.png\" class=\"img-responsive img1\">\n                                <img src=\"/static/images/projects/learn-ipad1.png\" class=\"img-responsive img2\">\n                            </div>\n                            <div class=\"content-wrapper\">\n                                <ul class=\"techs\">\n                                    <li>\n                                        <p>UI/UX DESIGN</p>\n                                    </li>\n                                    <li>\n                                        <p>PYTHON</p>\n                                    </li>\n                                    <li>\n                                        <p>DJANGO</p>\n                                    </li>\n                                    <li>\n                                        <p>ANGULAR</p>\n                                    </li>\n                                </ul>\n                                <p class=\"title\">SWIFTLEAR</p>\n                                <a href=\"{% url 'learn\" class=\"link-bordered hvr-sweep-to-right\">\n                                    VIEW CASE STUDIES \n                                    <img src=\"/static/images/arrow-right.svg\" class=\"arrow-sm\">\n                                </a>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"col-md-6 no-padding\">\n                    <div class=\"img-wrapper blackpearl\">\n                        <div class=\"content-holder wow fadeInUp\" data-wow-duration=\"0.5s\" data-wow-delay=\"1s\">\n                            <div class=\"img-holder\">\n                                <img src=\"/static/images/layer-7.png\" class=\"img-responsive img1\">\n                                <img src=\"/static/images/projects/jobs-ipad2.png\" class=\"img-responsive img2\">\n                            </div>\n                            <div class=\"content-wrapper\">\n                                <ul class=\"techs\">\n                                   <li>\n                                        <p>UI/UX DESIGN</p>\n                                    </li>\n                                    <li>\n                                        <p>PYTHON</p>\n                                    </li>\n                                    <li>\n                                        <p>DJANGO</p>\n                                    </li>\n                                    <li>\n                                        <p>ANGULAR</p>\n                                    </li>\n                                </ul>\n                                <p class=\"title\">JOBS</p>\n                                <a href=\"{% url 'jobs\" class=\"link-bordered hvr-sweep-to-right\">\n                                    VIEW CASE STUDIES \n                                    <img src=\"/static/images/arrow-right.svg\" class=\"arrow-sm\">\n                                </a>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n    <div class=\"light-section\">\n        <p class=\"wow fadeInUp\" data-wow-duration=\"0.5s\" data-wow-delay=\"0s\">\n            We offer our services from  the idea conceptualization to shipping final digital products. Most of the time, we're here to support companies, Startups and individual make a better world.\n        </p>\n        <div class=\"item-links\">\n            <a href=\"#\" class=\"wow fadeInUp\" data-wow-duration=\"0.5s\" data-wow-delay=\"0.2s\">KNOW <strong>OUR STORY</strong>\n                <img src=\"/static/images/arrow-right.svg\">\n            </a>\n            <div class=\"link-options\">\n                <a href=\"https://github.com/Swiftkind\" class=\"wow fadeInUp\" data-wow-duration=\"0.5s\" data-wow-delay=\"0.4s\">GITHUB</a>\n                <a href=\"https://www.behance.net/restyantiqc47e\" class=\"wow fadeInUp\" data-wow-duration=\"0.5s\" data-wow-delay=\"0.6s\">BEHANCE</a>\n                <a href=\"https://www.facebook.com/swiftkind/?ref=br_rs\" class=\"wow fadeInUp\" data-wow-duration=\"0.5s\" data-wow-delay=\"0.8s\">FACEBOOK</a>\n            </div>\n        </div>\n    </div>\n</div>"
+
+/***/ }),
+
+/***/ "../../../../../src/app/public/works/works.component.scss":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/public/works/works.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return WorksComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_wowjs_dist_wow_min__ = __webpack_require__("../../../../wowjs/dist/wow.min.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_wowjs_dist_wow_min___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_wowjs_dist_wow_min__);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var WorksComponent = /** @class */ (function () {
+    function WorksComponent() {
+    }
+    WorksComponent.prototype.ngOnInit = function () {
+    };
+    WorksComponent.prototype.ngAfterViewInit = function () { new __WEBPACK_IMPORTED_MODULE_1_wowjs_dist_wow_min__["WOW"]().init(); };
+    WorksComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-works',
+            template: __webpack_require__("../../../../../src/app/public/works/works.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/public/works/works.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], WorksComponent);
+    return WorksComponent;
 }());
 
 
@@ -563,6 +630,8 @@ var appStates = [].concat(__WEBPACK_IMPORTED_MODULE_0__public_states__["a" /* pu
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__public_index_index_component__ = __webpack_require__("../../../../../src/app/public/index/index.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__public_about_about_component__ = __webpack_require__("../../../../../src/app/public/about/about.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__public_process_process_component__ = __webpack_require__("../../../../../src/app/public/process/process.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__public_works_works_component__ = __webpack_require__("../../../../../src/app/public/works/works.component.ts");
+
 
 
 
@@ -582,6 +651,11 @@ var publicStates = [
         name: 'process',
         url: '/process/',
         views: Object(__WEBPACK_IMPORTED_MODULE_0__utils_layout__["a" /* render */])(__WEBPACK_IMPORTED_MODULE_3__public_process_process_component__["a" /* ProcessComponent */])
+    },
+    {
+        name: 'works',
+        url: '/works/',
+        views: Object(__WEBPACK_IMPORTED_MODULE_0__utils_layout__["a" /* render */])(__WEBPACK_IMPORTED_MODULE_4__public_works_works_component__["a" /* WorksComponent */])
     },
 ];
 
