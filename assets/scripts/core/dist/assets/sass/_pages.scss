@@ -7,7 +7,7 @@
 //process page
 .our-process {
     background: {
-        image: url('../images/grid-bg.png');
+        image: url('/static/images/grid-bg.png');
         repeat: repeat;
     }
     padding:100px 0 0;
@@ -448,7 +448,7 @@
     height: 900px;
     position: relative;
     background: {
-        image: url('../images/team/off4.jpg');
+        image: url('/static/images/team/off4.jpg');
         size: cover;
         position: center center;
     }

@@ -3,9 +3,13 @@ import { CommonModule } from '@angular/common';
 import { NavigationComponent } from './navigation/navigation.component';
 import { FooterComponent } from './footer/footer.component';
 
+import { UIRouterModule } from '@uirouter/angular';
+
+
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    UIRouterModule
   ],
   declarations: [NavigationComponent, FooterComponent]
 })
