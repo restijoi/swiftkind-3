@@ -7,7 +7,6 @@ import { WOW } from 'wowjs/dist/wow.min';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements AfterViewInit {
-  title = 'app';
 
   ngAfterViewInit() { new WOW().init(); }
 

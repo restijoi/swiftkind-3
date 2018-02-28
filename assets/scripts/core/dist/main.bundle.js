@@ -60,7 +60,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 var AppComponent = /** @class */ (function () {
     function AppComponent() {
-        this.title = 'app';
     }
     AppComponent.prototype.ngAfterViewInit = function () { new __WEBPACK_IMPORTED_MODULE_1_wowjs_dist_wow_min__["WOW"]().init(); };
     AppComponent = __decorate([
@@ -124,6 +123,74 @@ var AppModule = /** @class */ (function () {
         })
     ], AppModule);
     return AppModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/public/about/about.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div id=\"page-wrapper\">\n    <div class=\"masthead section\" data-section-name=\"about-us\">\n      <div id=\"masthead\" class=\"particles\"></div>\n        <div class=\"container main-text\">\n           <div class=\"header-content\">\n                <h3 class=\"wow fadeInUp\" data-wow-duration=\"0.5s\" data-wow-delay=\"0.5s\">\n                    WHO WE ARE\n                </h3>\n                <h4>\n                    <span class=\"text-content-wrapper\">\n                        <span typingAnimation [typeSpeed]=\"30\" [startDelay]=\"800\" class=\"wow\" data-wow-duration=\"0.5s\" data-wow-delay=\"0s\">We are Swiftkind. We are no-nonsense, creative and dedicated group of individuals working together to produce benchmark products.</span>\n                  </span>\n                </h4>\n            </div>\n        </div>\n        <div class=\"scroll\"></div>\n    </div>\n    <div class=\"about-philosphy wow fadeInUp section\" data-wow-duration=\"0.5s\" data-wow-delay=\"1s\">\n        <div class=\"container\">\n            <div class=\"row\">\n                <div class=\"col-md-6\">\n                    <div class=\"intro-text\">\n                        <h3 class=\"wow fadeInUp \" data-wow-duration=\"0.5s\" data-wow-delay=\"0s\">Ideas have no boundaries. We have no limits.</h3>\n                        \n                    </div>\n                </div>\n                <div class=\"col-md-6 no-padding\">\n                    <div class=\"text-wrapper\">\n                        <div class=\"text-content main \">\n                            <p class=\"wow fadeInUp\" data-wow-duration=\"0.5s\" data-wow-delay=\"0s\">Our wide range of expertise combined with honest approach strengthen our relationship with our clients. This fuels us to work harder to come up with products that exceed expectations.</p>\n                            <p class=\"wow fadeInUp\" data-wow-duration=\"0.5s\" data-wow-delay=\"0.5s\">\n                                Combining our creative thinking and problem solving skills, we deliver the right solutions that would allow our clients to meet objectives and business requirements. \n                            </p>\n                        </div>\n                        <div class=\"text-content\">\n                            <a uiSref=\"works\" class=\" wow fadeInUp\" data-wow-duration=\"0.5s\" data-wow-delay=\"2.5s\">VIEW OUR PROJECTS<img src=\"/static/images/arrow-right.svg\" class=\"arrow-sm\"></a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n    <div class=\"section\">\n        <div class=\"light-section \">\n            <p class=\"wow fadeInUp\" data-wow-duration=\"0.5s\" data-wow-delay=\"0s\">\n                We also take immense pride on our dedication to our clients through swift response and exceptional customer service. With full enthusiasm, we seek to build solid long term relationship based on trust.\n            </p>\n            <div class=\"item-links\">\n                <a uiSref=\"process\" class=\"wow fadeInUp\" data-wow-duration=\"0.5s\" data-wow-delay=\"0.2s\">KNOW  OUR PROCESS\n                    <img src=\"/static/images/arrow-right-black.svg\" class=\"arrow-sm\">\n                </a>\n                <div class=\"link-options\">\n                    <a uiSref=\"contact\" class=\"wow fadeInUp\" data-wow-duration=\"0.5s\" data-wow-delay=\"0.4s\">START A PROJECT WITH US\n                    </a>\n                </div>\n            </div>\n        </div>\n        <div class=\"office\">\n            <div class=\"office-caption\">\n                <div>\n                    <p>\n                        Our team is working together to build a positive, proactive and stimulating environment. Every team member pushes their limits to turn brave ideas into a working and fully usable products.\n                    </p>\n                    <a href=\"#\" class=\"wow fadeInUp\" data-wow-duration=\"0.5s\" data-wow-delay=\"0.2s\">VISIT  OUR BLOG\n                        <img src=\"/static/images/arrow-right.svg\" class=\"arrow-sm\">\n                    </a>\n                </div>\n            </div>\n        </div>\n        <div class=\"people\">\n            <div class=\"section-title\">\n                <div class=\"bg-anim\">\n                    <span class=\"text-anim wow inverted-text\" data-wow-duration=\"0.5s\" data-wow-delay=\"0s\" >OUR TEAM</span>\n                    <div class=\"anim wow\" data-wow-duration=\"0.5s\" data-wow-delay=\"0s\"></div>\n                </div>\n            </div>\n            <div class=\"caption\">\n                <h3>\n                    <div class=\"bg-anim\">\n                        <span class=\"text-anim wow inverted-text\" data-wow-duration=\"0.5s\" data-wow-delay=\"0s\" > People <strong>behind Swiftkind</strong></span>\n                        <div class=\"anim wow\" data-wow-duration=\"0.5s\" data-wow-delay=\"0.5s\"></div>\n                    </div>\n                    </h3>\n                <p  class=\"wow fadeInUp\" data-wow-duration=\"0.5s\" data-wow-delay=\"0.75s\">\n                   A small team of keen, specialized and diverse people believing that our works could improve people's daily lives. Fueled by our passion for our work, we pursue learing to keep up with the best practices and industry standards.\n                </p>\n            </div>\n            <div class=\"owl-carousel team-carousel\" id=\"team-carousel\">\n                <div class=\"item\">\n                    <div class=\"img-holder\">\n                        <div class=\"member-img\">\n                            <img src=\"/static/images/team/earvin3.png\" class=\"img1\">\n                            <img src=\"/static/images/team/earvin1.png\" class=\"img2\">\n                            <div class=\"details\">\n                                <a href=\"#\">Earvin Gemenez</a>\n                                <p>CEO</p>\n                                <div class=\"external-links\">\n                                  <a href=\"#\"><span class=\"ion-social-github\"></span></a>\n                                  <a href=\"#\"><span class=\"ion-social-linkedin\"></span></a>\n                                  <a href=\"#\"><span class=\"ion-ios-upload\"></span></a>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"item\">\n                    <div class=\"img-holder\">\n                        <div class=\"member-img\">\n                            <img src=\"/static/images/team/ralph2.png\" class=\"img1\">\n                            <img src=\"/static/images/team/ralph1.png\" class=\"img2\">\n                            <div class=\"details\">\n                                <a href=\"#\">Ralph Leyga</a>\n                                <p>COO</p>\n                                <div class=\"external-links\">\n                                  <a href=\"#\"><span class=\"ion-social-github\"></span></a>\n                                  <a href=\"#\"><span class=\"ion-social-linkedin\"></span></a>\n                                  <a href=\"#\"><span class=\"ion-ios-upload\"></span></a>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"item\">\n                    <div class=\"img-holder\">\n                        <div class=\"member-img\">\n                            <img src=\"/static/images/team/manny2.png\" class=\"img1\">\n                            <img src=\"/static/images/team/manny1.png\" class=\"img2\">\n                            <div class=\"details\">\n                                <a href=\"#\">Manny Candidier</a>\n                                <p>CTO</p>\n                                <div class=\"external-links\">\n                                  <a href=\"#\"><span class=\"ion-social-github\"></span></a>\n                                  <a href=\"#\"><span class=\"ion-social-linkedin\"></span></a>\n                                  <a href=\"#\"><span class=\"ion-ios-upload\"></span></a>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"item\">\n                    <div class=\"img-holder\">\n                        <div class=\"member-img\">\n                            <img src=\"/static/images/team/resty3.png\" class=\"img1\">\n                            <img src=\"/static/images/team/resty2.png\" class=\"img2\">\n                            <div class=\"details\">\n                                <a href=\"#\">Restie Antiquin</a>\n                                <p>UI/UX Designer</p>\n                                <div class=\"external-links\">\n                                  <a href=\"#\"><span class=\"ion-social-github\"></span></a>\n                                  <a href=\"#\"><span class=\"ion-social-linkedin\"></span></a>\n                                  <a href=\"#\"><span class=\"ion-ios-upload\"></span></a>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"item\">\n                    <div class=\"img-holder\">\n                        <div class=\"member-img\">\n                            <img src=\"/static/images/team/kevin3.png\" class=\"img1\">\n                            <img src=\"/static/images/team/kevin1.png\" class=\"img2\">\n                            <div class=\"details\">\n                                <a href=\"#\">Kevin Kalis</a>\n                                <p>Software Engineer</p>\n                                <div class=\"external-links\">\n                                  <a href=\"#\"><span class=\"ion-social-github\"></span></a>\n                                  <a href=\"#\"><span class=\"ion-social-linkedin\"></span></a>\n                                  <a href=\"#\"><span class=\"ion-ios-upload\"></span></a>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"item\">\n                    <div class=\"img-holder\">\n                        <div class=\"member-img\">\n                            <img src=\"/static/images/team/gong3.png\" class=\"img1\">\n                            <img src=\"/static/images/team/gong1.png\" class=\"img2\">\n                            <div class=\"details\">\n                                <a href=\"#\">Jerome Rumbaoa</a>\n                                <p>Software Engineer</p>\n                                <div class=\"external-links\">\n                                  <a href=\"#\"><span class=\"ion-social-github\"></span></a>\n                                  <a href=\"#\"><span class=\"ion-social-linkedin\"></span></a>\n                                  <a href=\"#\"><span class=\"ion-ios-upload\"></span></a>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"item\">\n                    <div class=\"img-holder\">\n                        <div class=\"member-img\">\n                            <img src=\"/static/images/team/dudz1.png\" class=\"img1\">\n                            <img src=\"/static/images/team/dudz2.png\" class=\"img2\">\n                            <div class=\"details\">\n                                <a href=\"#\">Sanny Candidier</a>\n                                <p>Software Engineer</p>\n                                <div class=\"external-links\">\n                                  <a href=\"#\"><span class=\"ion-social-github\"></span></a>\n                                  <a href=\"#\"><span class=\"ion-social-linkedin\"></span></a>\n                                  <a href=\"#\"><span class=\"ion-ios-upload\"></span></a>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"item\">\n                    <div class=\"img-holder\">\n                        <div class=\"member-img\">\n                            <img src=\"/static/images/team/cholo3.png\" class=\"img1\">\n                            <img src=\"/static/images/team/cholo1.png\" class=\"img2\">\n                            <div class=\"details\">\n                                <a href=\"#\">Pocholo Recto</a>\n                                <p>Software Engineer</p>\n                                <div class=\"external-links\">\n                                  <a href=\"#\"><span class=\"ion-social-github\"></span></a>\n                                  <a href=\"#\"><span class=\"ion-social-linkedin\"></span></a>\n                                  <a href=\"#\"><span class=\"ion-ios-upload\"></span></a>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"item\">\n                    <div class=\"img-holder\">\n                        <div class=\"member-img\">\n                            <img src=\"/static/images/team/king1.png\" class=\"img1\">\n                            <img src=\"/static/images/team/king2.png\" class=\"img2\">\n                            <div class=\"details\">\n                                <a href=\"#\">King Rule</a>\n                                <p>Software Engineer</p>\n                                <div class=\"external-links\">\n                                  <a href=\"#\"><span class=\"ion-social-github\"></span></a>\n                                  <a href=\"#\"><span class=\"ion-social-linkedin\"></span></a>\n                                  <a href=\"#\"><span class=\"ion-ios-upload\"></span></a>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"item\">\n                    <div class=\"img-holder\">\n                        <div class=\"member-img\">\n                            <img src=\"/static/images/team/kolai1.png\" class=\"img1\">\n                            <img src=\"/static/images/team/kolai3.png\" class=\"img2\">\n                            <div class=\"details\">\n                                <a href=\"#\">Nikolai Teves</a>\n                                <p>Software Engineer</p>\n                                <div class=\"external-links\">\n                                  <a href=\"#\"><span class=\"ion-social-github\"></span></a>\n                                  <a href=\"#\"><span class=\"ion-social-linkedin\"></span></a>\n                                  <a href=\"#\"><span class=\"ion-ios-upload\"></span></a>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"item\">\n                    <div class=\"img-holder\">\n                        <div class=\"member-img\">\n                            <img src=\"/static/images/team/mike1.png\" class=\"img1\">\n                            <img src=\"/static/images/team/mike2.png\" class=\"img2\">\n                            <div class=\"details\">\n                                <a href=\"#\">Michael Sy</a>\n                                <p>Software Engineer</p>\n                                <div class=\"external-links\">\n                                  <a href=\"#\"><span class=\"ion-social-github\"></span></a>\n                                  <a href=\"#\"><span class=\"ion-social-linkedin\"></span></a>\n                                  <a href=\"#\"><span class=\"ion-ios-upload\"></span></a>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"item\">\n                    <div class=\"img-holder\">\n                        <div class=\"member-img\">\n                            <img src=\"/static/images/team/sam2.png\" class=\"img1\">\n                            <img src=\"/static/images/team/sam1.png\" class=\"img2\">\n                            <div class=\"details\">\n                                <a href=\"#\">Sam Benemerito</a>\n                                <p>Intern</p>\n                                <div class=\"external-links\">\n                                  <a href=\"#\"><span class=\"ion-social-github\"></span></a>\n                                  <a href=\"#\"><span class=\"ion-social-linkedin\"></span></a>\n                                  <a href=\"#\"><span class=\"ion-ios-upload\"></span></a>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"item\">\n                    <div class=\"img-holder\">\n                        <div class=\"member-img\">\n                            <img src=\"/static/images/team/mae3.png\" class=\"img1\">\n                            <img src=\"/static/images/team/mae1.png\" class=\"img2\">\n                            <div class=\"details\">\n                                <a href=\"#\">Christian Mae Mendez</a>\n                                <p>Intern</p>\n                                <div class=\"external-links\">\n                                  <a href=\"#\"><span class=\"ion-social-github\"></span></a>\n                                  <a href=\"#\"><span class=\"ion-social-linkedin\"></span></a>\n                                  <a href=\"#\"><span class=\"ion-ios-upload\"></span></a>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"item\">\n                    <div class=\"img-holder\">\n                        <div class=\"member-img\">\n                            <img src=\"/static/images/team/sai1.png\" class=\"img1\">\n                            <img src=\"/static/images/team/sai3.png\" class=\"img2\">\n                            <div class=\"details\">\n                                <a href=\"#\">Isaiah Villa Abrille</a>\n                                <p>Intern</p>\n                                <div class=\"external-links\">\n                                  <a href=\"#\"><span class=\"ion-social-github\"></span></a>\n                                  <a href=\"#\"><span class=\"ion-social-linkedin\"></span></a>\n                                  <a href=\"#\"><span class=\"ion-ios-upload\"></span></a>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n\n        <div class=\"principles section\">\n            <div class=\"section-title\">\n                <div class=\"bg-anim\">\n                    <span class=\"text-anim\">WHAT WE BELIEVE IN</span>\n                    <div class=\"anim\"></div>\n                </div>\n            </div>\n            <div class=\"container\">\n                <div class=\"row flex\">\n                    <div class=\"col-md-6 col-sm-12 no-padding\">\n                    <div class=\"principles-header\">\n                       <h2 class=\"wow hidden-xs\" data-wow-duration=\"0.5s\" data-wow-delay=\"0.2s\">\n                            <span>\n                                <div class=\"bg-anim\">\n                                    <span class=\"text-anim wow\" data-wow-duration=\"1s\" data-wow-delay=\"0s\">To ensure quality,</span>\n                                    <div class=\"anim wow\" data-wow-duration=\"1s\" data-wow-delay=\"0s\"></div>\n                                </div>\n                            </span>\n                            <span>\n                                <div class=\"bg-anim\">\n                                    <span class=\"text-anim wow\" data-wow-duration=\"1s\" data-wow-delay=\"0.5s\">we assume responsibility</span>\n                                    <div class=\"anim wow\" data-wow-duration=\"1s\" data-wow-delay=\"0.5s\"></div>\n                                </div>\n                            </span>\n                            <span>\n                                <div class=\"bg-anim\">\n                                    <span class=\"text-anim wow\" data-wow-duration=\"1s\" data-wow-delay=\"1s\">for the project throughout</span>\n                                    <div class=\"anim wow\" data-wow-duration=\"1s\" data-wow-delay=\"1s\"></div>\n                                </div>\n                            </span>\n                            <span>\n                                <div class=\"bg-anim\">\n                                    <span class=\"text-anim wow\" data-wow-duration=\"1s\" data-wow-delay=\"1.5s\">the entire process.</span>\n                                    <div class=\"anim wow\" data-wow-duration=\"1s\" data-wow-delay=\"1.5s\"></div>\n                                </div>\n                            </span>\n                        </h2>\n                       <h2 class=\"wow visible-xs\" data-wow-duration=\"0.5s\" data-wow-delay=\"0.2s\">\n                            <span>\n                                <div class=\"bg-anim\">\n                                    <span class=\"text-anim wow\" data-wow-duration=\"1s\" data-wow-delay=\"0s\">To ensure quality, we</span>\n                                    <div class=\"anim wow\" data-wow-duration=\"1s\" data-wow-delay=\"0s\"></div>\n                                </div>\n                            </span>\n                            <span>\n                                <div class=\"bg-anim\">\n                                    <span class=\"text-anim wow\" data-wow-duration=\"1s\" data-wow-delay=\"0.5s\">assume responsibility</span>\n                                    <div class=\"anim wow\" data-wow-duration=\"1s\" data-wow-delay=\"0.5s\"></div>\n                                </div>\n                            </span>\n                            <span>\n                                <div class=\"bg-anim\">\n                                    <span class=\"text-anim wow\" data-wow-duration=\"1s\" data-wow-delay=\"1s\">for the project throughout</span>\n                                    <div class=\"anim wow\" data-wow-duration=\"1s\" data-wow-delay=\"1s\"></div>\n                                </div>\n                            </span>\n                            <span>\n                                <div class=\"bg-anim\">\n                                    <span class=\"text-anim wow\" data-wow-duration=\"1s\" data-wow-delay=\"1.5s\">the entire process.</span>\n                                    <div class=\"anim wow\" data-wow-duration=\"1s\" data-wow-delay=\"1.5s\"></div>\n                                </div>\n                            </span>\n                        </h2>\n                    </div>\n                </div>\n                <div class=\"col-md-offset-1 col-md-5 col-sm-12\">\n                    <div class=\"principles-header\">\n                        <p class=\"fadeInUp wow\" data-wow-duration=\"1s\" data-wow-delay=\"1.5s\">Believing that quality is the core of our work, we are taking one step at time by defining what actually matters to us.</p>\n                    </div>\n\n                </div>\n                <div class=\"row no-margin\">\n                    <div class=\"col-md-5 col-sm-12\">\n                        <div class=\"principles-content\">\n                            <h3>\n                                <div class=\"bg-anim\">\n                                    <span class=\"text-anim wow\" data-wow-duration=\"1s\" data-wow-delay=\"1.5s\">Our purpose</span>\n                                    <div class=\"anim wow\" data-wow-duration=\"1s\" data-wow-delay=\"1.5s\"></div>\n                                </div>\n                            </h3>\n                            <p  class=\"fadeInUp wow\" data-wow-duration=\"1s\" data-wow-delay=\"2s\">\n                                We design and develop applications that kick off the way people work, play and live. Our designers and strategists work closely to identify needs, design and define functionalities, determine timelines that would allow us to deal with any contingencies and deliver on time.\n                            </p>\n                        </div>\n                    </div>\n                    <div class=\"col-md-offset-2 col-md-5 col-sm-12 col-sm-offset-0 \">\n                        <div class=\"principles-content\">\n                            <h3>\n                                <div class=\"bg-anim\">\n                                    <span class=\"text-anim wow\" data-wow-duration=\"1s\" data-wow-delay=\"1.5s\">Our mission</span>\n                                    <div class=\"anim wow\" data-wow-duration=\"1s\" data-wow-delay=\"1.5s\"></div>\n                                </div>\n                            </h3>\n                            <p  class=\"fadeInUp wow\" data-wow-duration=\"1s\" data-wow-delay=\"2s\">\n                                We dream of a world where we can inspire more people to create greater solutions that would give everyone the capacity to solve more problems and make everyday life easier by the use of the technology, creativity and skills we have.\n                            </p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n    <div class=\"contact-link\">\n        <h4 class=\"text-bg\">WORK WITH US</h4>\n        <h3 class=\"wow fadeInUp\" data-wow-duration=\"0.5s\" data-wow-delay=\"0.2s\">Let's create something amazing</h3>\n        <a uiSref=\"contact\" class=\"inverted-link wow fadeInUp\" data-wow-duration=\"0.5s\" data-wow-delay=\"0.2s\">MAKE IT HAPPEN</a>\n    </div>\n</div>"
+
+/***/ }),
+
+/***/ "../../../../../src/app/public/about/about.component.scss":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/public/about/about.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AboutComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_wowjs_dist_wow_min__ = __webpack_require__("../../../../wowjs/dist/wow.min.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_wowjs_dist_wow_min___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_wowjs_dist_wow_min__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var AboutComponent = /** @class */ (function () {
+    function AboutComponent(app) {
+        this.app = app;
+    }
+    AboutComponent.prototype.ngOnInit = function () {
+    };
+    AboutComponent.prototype.ngAfterViewInit = function () { new __WEBPACK_IMPORTED_MODULE_1_wowjs_dist_wow_min__["WOW"]().init(); };
+    AboutComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-about',
+            template: __webpack_require__("../../../../../src/app/public/about/about.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/public/about/about.component.scss")]
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */]])
+    ], AboutComponent);
+    return AboutComponent;
 }());
 
 
@@ -200,6 +267,7 @@ var FooterComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__("../../../common/esm5/common.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__navigation_navigation_component__ = __webpack_require__("../../../../../src/app/public/includes/navigation/navigation.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__footer_footer_component__ = __webpack_require__("../../../../../src/app/public/includes/footer/footer.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__uirouter_angular__ = __webpack_require__("../../../../@uirouter/angular/lib/index.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -210,13 +278,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 var IncludesModule = /** @class */ (function () {
     function IncludesModule() {
     }
     IncludesModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1__angular_common__["b" /* CommonModule */]
+                __WEBPACK_IMPORTED_MODULE_1__angular_common__["b" /* CommonModule */],
+                __WEBPACK_IMPORTED_MODULE_4__uirouter_angular__["UIRouterModule"]
             ],
             declarations: [__WEBPACK_IMPORTED_MODULE_2__navigation_navigation_component__["a" /* NavigationComponent */], __WEBPACK_IMPORTED_MODULE_3__footer_footer_component__["a" /* FooterComponent */]]
         })
@@ -231,7 +301,7 @@ var IncludesModule = /** @class */ (function () {
 /***/ "../../../../../src/app/public/includes/navigation/navigation.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"m-nav\">\n  <ul class=\"\">\n      <li>\n          <a uiSref=\"index\" class=\"hvr-underline-from-center\">HOME</a>\n      </li>\n      <li>\n          <a uiSref=\"about\" class=\"hvr-underline-from-center\">OUR STORY</a>\n      </li>\n      <li>\n          <a uiSref=\"process\" class=\"hvr-underline-from-center\">HOW WE WORK</a>\n      </li>\n      <li>\n          <a uiSref=\"works\" class=\"hvr-underline-from-center\">PROJECTS</a>\n      </li>\n      <li>\n          <a uiSref=\"http://blog.swiftkind.com\" class=\"hvr-underline-from-center\">JOURNAL</a>\n      </li>\n      <li>\n          <a uiSref=\"contact\" class=\"hvr-underline-from-center\">CONTACT</a>\n      </li>\n  </ul>\n</div>\n<nav class=\"navbar main-nav main-nav-sticky\">\n      <div class=\"container-fluid\">\n          <div class=\"navbar-header\">\n              <a uiSref=\"index\" class=\"navbar-brand\">\n                  <img src=\"/static/images/nav-logo.svg\" class=\"nav-logo\">\n              </a>\n          </div>\n          <ul class=\"nav navbar navbar-nav navbar-right nav-links\">\n              <li>\n                  <a uiSref=\"about\" class=\"hvr-underline-from-center\">OUR STORY</a>\n              </li>\n              <li>\n                  <a uiSref=\"process\" class=\"hvr-underline-from-center\">HOW WE WORK</a>\n              </li>\n              <li>\n              \n                  <a uiSref=\"works\" class=\"hvr-underline-from-center\">PROJECTS</a>\n              </li>\n              <li>\n                  <a href=\"http://blog.swiftkind.com\" class=\"hvr-underline-from-center\">JOURNAL</a>\n              </li>\n              <li>\n                  <a uiSref=\"contact\" class=\"hvr-underline-from-center\">CONTACT</a>\n              </li>\n          </ul>\n          <ul class=\"nav navbar navbar-nav navbar-right\">\n              <li>\n                  <a href=\"#\" class=\"mobile-nav\">\n                      <span class=\"bar top\"></span>\n                      <span class=\"menu\">MENU</span>\n                      <span class=\"bar bottom\"></span>\n                  </a>\n              </li>\n          </ul>\n      </div>\n</nav>"
+module.exports = "<div class=\"m-nav\">\n  <ul class=\"\">\n      <li>\n          <a uiSref=\"index\" class=\"hvr-underline-from-center\">HOME</a>\n      </li>\n      <li>\n          <a uiSref=\"about\" class=\"hvr-underline-from-center\">OUR STORY</a>\n      </li>\n      <li>\n          <a uiSref=\"process\" class=\"hvr-underline-from-center\">HOW WE WORK</a>\n      </li>\n      <li>\n          <a uiSref=\"works\" class=\"hvr-underline-from-center\">PROJECTS</a>\n      </li>\n      <li>\n          <a uiSref=\"http://blog.swiftkind.com\" class=\"hvr-underline-from-center\">JOURNAL</a>\n      </li>\n      <li>\n          <a uiSref=\"contact\" class=\"hvr-underline-from-center\">CONTACT</a>\n      </li>\n  </ul>\n</div>\n<nav class=\"navbar main-nav main-nav-sticky\">\n      <div class=\"container-fluid\">\n          <div class=\"navbar-header\">\n              <a uiSref=\"index\" class=\"navbar-brand\">\n                  <img src=\"/static/images/nav-logo.svg\" class=\"nav-logo\">\n              </a>\n          </div>\n          <ul class=\"nav navbar navbar-nav navbar-right nav-links\">\n              <li>\n                  <a uiSref='about' class=\"hvr-underline-from-center\">OUR STORY</a>\n              </li>\n              <li>\n                  <a uiSref=\"process\" class=\"hvr-underline-from-center\">HOW WE WORK</a>\n              </li>\n              <li>\n              \n                  <a uiSref=\"works\" class=\"hvr-underline-from-center\">PROJECTS</a>\n              </li>\n              <li>\n                  <a href=\"http://blog.swiftkind.com\" class=\"hvr-underline-from-center\">JOURNAL</a>\n              </li>\n              <li>\n                  <a uiSref=\"contact\" class=\"hvr-underline-from-center\">CONTACT</a>\n              </li>\n          </ul>\n          <ul class=\"nav navbar navbar-nav navbar-right\">\n              <li>\n                  <a href=\"#\" class=\"mobile-nav\">\n                      <span class=\"bar top\"></span>\n                      <span class=\"menu\">MENU</span>\n                      <span class=\"bar bottom\"></span>\n                  </a>\n              </li>\n          </ul>\n      </div>\n</nav>"
 
 /***/ }),
 
@@ -259,6 +329,7 @@ module.exports = module.exports.toString();
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NavigationComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__uirouter_angular__ = __webpack_require__("../../../../@uirouter/angular/lib/index.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -269,8 +340,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var NavigationComponent = /** @class */ (function () {
-    function NavigationComponent() {
+    function NavigationComponent(stateService) {
+        this.stateService = stateService;
     }
     NavigationComponent.prototype.ngOnInit = function () {
     };
@@ -280,7 +353,7 @@ var NavigationComponent = /** @class */ (function () {
             template: __webpack_require__("../../../../../src/app/public/includes/navigation/navigation.component.html"),
             styles: [__webpack_require__("../../../../../src/app/public/includes/navigation/navigation.component.scss")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__uirouter_angular__["StateService"]])
     ], NavigationComponent);
     return NavigationComponent;
 }());
@@ -320,6 +393,8 @@ module.exports = module.exports.toString();
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return IndexComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_wowjs_dist_wow_min__ = __webpack_require__("../../../../wowjs/dist/wow.min.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_wowjs_dist_wow_min___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_wowjs_dist_wow_min__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -330,11 +405,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var IndexComponent = /** @class */ (function () {
     function IndexComponent() {
     }
     IndexComponent.prototype.ngOnInit = function () {
     };
+    IndexComponent.prototype.ngAfterViewInit = function () { new __WEBPACK_IMPORTED_MODULE_1_wowjs_dist_wow_min__["WOW"]().init(); };
     IndexComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-index',
@@ -357,15 +434,19 @@ var IndexComponent = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PublicModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__("../../../common/esm5/common.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angular_typing_animation__ = __webpack_require__("../../../../angular-typing-animation/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ngx_bootstrap_carousel__ = __webpack_require__("../../../../ngx-bootstrap/carousel/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__index_index_component__ = __webpack_require__("../../../../../src/app/public/index/index.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__uirouter_angular__ = __webpack_require__("../../../../@uirouter/angular/lib/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular_typing_animation__ = __webpack_require__("../../../../angular-typing-animation/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ngx_bootstrap_carousel__ = __webpack_require__("../../../../ngx-bootstrap/carousel/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__index_index_component__ = __webpack_require__("../../../../../src/app/public/index/index.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__about_about_component__ = __webpack_require__("../../../../../src/app/public/about/about.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
 
 
 
@@ -378,9 +459,10 @@ var PublicModule = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             imports: [
                 __WEBPACK_IMPORTED_MODULE_1__angular_common__["b" /* CommonModule */],
-                __WEBPACK_IMPORTED_MODULE_3_ngx_bootstrap_carousel__["a" /* CarouselModule */]
+                __WEBPACK_IMPORTED_MODULE_2__uirouter_angular__["UIRouterModule"],
+                __WEBPACK_IMPORTED_MODULE_4_ngx_bootstrap_carousel__["a" /* CarouselModule */]
             ],
-            declarations: [__WEBPACK_IMPORTED_MODULE_4__index_index_component__["a" /* IndexComponent */], __WEBPACK_IMPORTED_MODULE_2_angular_typing_animation__["a" /* TypingAnimationDirective */]]
+            declarations: [__WEBPACK_IMPORTED_MODULE_5__index_index_component__["a" /* IndexComponent */], __WEBPACK_IMPORTED_MODULE_3_angular_typing_animation__["a" /* TypingAnimationDirective */], __WEBPACK_IMPORTED_MODULE_6__about_about_component__["a" /* AboutComponent */]]
         })
     ], PublicModule);
     return PublicModule;
@@ -395,14 +477,12 @@ var PublicModule = /** @class */ (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return appStates; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash__ = __webpack_require__("../../../../lodash/lodash.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_lodash__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__public_states__ = __webpack_require__("../../../../../src/app/states/public.states.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__public_states__ = __webpack_require__("../../../../../src/app/states/public.states.ts");
 
-
-var appStates = __WEBPACK_IMPORTED_MODULE_0_lodash__["flattenDeep"]([
-    __WEBPACK_IMPORTED_MODULE_1__public_states__["a" /* publicStates */]
-]);
+// export const appStates = _.flattenDeep([
+//   publicStates
+// ])
+var appStates = [].concat(__WEBPACK_IMPORTED_MODULE_0__public_states__["a" /* publicStates */]);
 
 
 /***/ }),
@@ -414,10 +494,21 @@ var appStates = __WEBPACK_IMPORTED_MODULE_0_lodash__["flattenDeep"]([
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return publicStates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_layout__ = __webpack_require__("../../../../../src/app/utils/layout.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__public_index_index_component__ = __webpack_require__("../../../../../src/app/public/index/index.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__public_about_about_component__ = __webpack_require__("../../../../../src/app/public/about/about.component.ts");
+
 
 
 var publicStates = [
-    { name: 'index', url: '/', views: Object(__WEBPACK_IMPORTED_MODULE_0__utils_layout__["a" /* render */])(__WEBPACK_IMPORTED_MODULE_1__public_index_index_component__["a" /* IndexComponent */]) },
+    {
+        name: 'index',
+        url: '/',
+        views: Object(__WEBPACK_IMPORTED_MODULE_0__utils_layout__["a" /* render */])(__WEBPACK_IMPORTED_MODULE_1__public_index_index_component__["a" /* IndexComponent */])
+    },
+    {
+        name: 'about',
+        url: '/about/',
+        views: Object(__WEBPACK_IMPORTED_MODULE_0__utils_layout__["a" /* render */])(__WEBPACK_IMPORTED_MODULE_2__public_about_about_component__["a" /* AboutComponent */])
+    },
 ];
 
 
