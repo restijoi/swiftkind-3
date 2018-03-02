@@ -222,7 +222,7 @@
             h2 {
                 font-size: 36px;
                 color: $jade;
-                font-family: $Roboto-Mono-Light;
+                font-family: $Maax-Sans-Regular;
                 margin-bottom: 40px;
                 margin-top: 20px;
                 @include mobile {
@@ -677,7 +677,7 @@
 .testimonies {
     display: flex!important;
     align-items: center;
-    height: 50vh;
+    min-height: 100vh;
     position: relative;
     @include mobile {
         height: 100vh;
@@ -686,12 +686,7 @@
         height: 75vh;
     }
     .item {
-        width: 50%;
-        margin: 0 auto;
-        text-align: center;
-        @include mobile {
-            width: 75%;
-        }
+        
         .testimony {
             color: $white;
             font-size: 24px;
@@ -719,6 +714,9 @@
                 font-size: 16px;
             }
         }
+    }
+    .carousel-indicators{
+      opacity: 0;
     }
 }
 
