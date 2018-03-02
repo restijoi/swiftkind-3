@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { UIRouterModule } from '@uirouter/angular';
-import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { SwiperModule } from 'angular2-useful-swiper';
 
 import { PublicModule } from './public/public.module';
 import { IncludesModule } from './public/includes/includes.module';
@@ -17,7 +17,7 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     UIRouterModule.forRoot({otherwise: '/', states: appStates}),
-    CarouselModule.forRoot(),
+    SwiperModule,
     BrowserModule,
     PublicModule,
     IncludesModule
