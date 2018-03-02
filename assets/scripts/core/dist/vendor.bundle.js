@@ -25111,10 +25111,14 @@ function isPlatformWorkerUi(platformId) {
  * \@stable
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 var VERSION = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* Version */]('5.2.6');
 =======
 var VERSION = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["Version"]('5.2.4');
 >>>>>>> added swiper carousel
+=======
+var VERSION = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["Version"]('5.2.6');
+>>>>>>> fix swiper carousel
 
 /**
  * @fileoverview added by tsickle
@@ -80838,10 +80842,14 @@ var CachedResourceLoader = /** @class */ (function (_super) {
  * \@stable
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["_8" /* Version */]('5.2.6');
 =======
 var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["Version"]('5.2.4');
 >>>>>>> added swiper carousel
+=======
+var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["Version"]('5.2.6');
+>>>>>>> fix swiper carousel
 
 /**
  * @fileoverview added by tsickle
@@ -85199,6 +85207,7 @@ function sanitizeHtml(defaultDoc, unsafeHtmlInput) {
         } while (unsafeHtml !== parsedHtml);
         var /** @type {?} */ sanitizer = new SanitizingHtmlSerializer();
 <<<<<<< HEAD
+<<<<<<< HEAD
         var /** @type {?} */ safeHtml = sanitizer.sanitizeChildren(DOM.getTemplateContent(inertBodyElement) || inertBodyElement);
         if (Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_16" /* isDevMode */])() && sanitizer.sanitizedSomething) {
 =======
@@ -85209,6 +85218,9 @@ function sanitizeHtml(defaultDoc, unsafeHtmlInput) {
             var child = _a[_i];
             DOM.removeChild(parent_1, child);
         }
+=======
+        var /** @type {?} */ safeHtml = sanitizer.sanitizeChildren(DOM.getTemplateContent(inertBodyElement) || inertBodyElement);
+>>>>>>> fix swiper carousel
         if (Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["isDevMode"])() && sanitizer.sanitizedSomething) {
 >>>>>>> added swiper carousel
             DOM.log('WARNING: sanitizing HTML stripped some content (see http://g.co/ng/security#xss).');
@@ -86311,10 +86323,14 @@ var By = /** @class */ (function () {
  * \@stable
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["_8" /* Version */]('5.2.6');
 =======
 var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["Version"]('5.2.4');
 >>>>>>> added swiper carousel
+=======
+var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["Version"]('5.2.6');
+>>>>>>> fix swiper carousel
 
 /**
  * @fileoverview added by tsickle
@@ -93887,10 +93903,14 @@ function provideRouterInitializer() {
  * \@stable
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["_8" /* Version */]('5.2.6');
 =======
 var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["Version"]('5.2.4');
 >>>>>>> added swiper carousel
+=======
+var VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["Version"]('5.2.6');
+>>>>>>> fix swiper carousel
 
 /**
  * @fileoverview added by tsickle
