@@ -1352,7 +1352,7 @@ a:hover .arrow-sm {
 .services-section .item .svc-label h2 {
   font-size: 36px;
   color: #0edc87;
-  font-family: "Roboto Mono Light";
+  font-family: "Maax-Sans-Regular";
   margin-bottom: 40px;
   margin-top: 20px;
 }
@@ -1921,7 +1921,7 @@ a:hover .arrow-sm {
 .testimonies {
   display: flex !important;
   align-items: center;
-  height: 50vh;
+  min-height: 100vh;
   position: relative;
 }
 @media (min-width: 320px) and (max-width: 767px) {
@@ -1936,38 +1936,26 @@ a:hover .arrow-sm {
     height: 75vh;
   }
 }
-/* line 688, ../sass/_landing.scss */
-.testimonies .item {
-  width: 50%;
-  margin: 0 auto;
-  text-align: center;
-}
-@media (min-width: 320px) and (max-width: 767px) {
-  /* line 688, ../sass/_landing.scss */
-  .testimonies .item {
-    width: 75%;
-  }
-}
-/* line 695, ../sass/_landing.scss */
+/* line 690, ../sass/_landing.scss */
 .testimonies .item .testimony {
   color: #ffffff;
   font-size: 24px;
   font-family: "Titillium Extralight";
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 695, ../sass/_landing.scss */
+  /* line 690, ../sass/_landing.scss */
   .testimonies .item .testimony {
     font-size: 24px;
   }
 }
-/* line 703, ../sass/_landing.scss */
+/* line 698, ../sass/_landing.scss */
 .testimonies .item .author {
   text-align: left;
   float: right;
   margin-top: 50px;
   position: relative;
 }
-/* line 708, ../sass/_landing.scss */
+/* line 703, ../sass/_landing.scss */
 .testimonies .item .author .line {
   position: absolute;
   width: 50px;
@@ -1976,14 +1964,18 @@ a:hover .arrow-sm {
   left: -75px;
   top: 50%;
 }
-/* line 716, ../sass/_landing.scss */
+/* line 711, ../sass/_landing.scss */
 .testimonies .item .author p {
   color: #ffffff;
   font-family: "Roboto Mono Thin";
   font-size: 16px;
 }
+/* line 718, ../sass/_landing.scss */
+.testimonies .carousel-indicators {
+  opacity: 0;
+}
 
-/* line 725, ../sass/_landing.scss */
+/* line 723, ../sass/_landing.scss */
 .contact-link {
   height: 500px;
   width: 100%;
@@ -1994,7 +1986,7 @@ a:hover .arrow-sm {
   justify-content: center;
   flex-direction: column;
 }
-/* line 734, ../sass/_landing.scss */
+/* line 732, ../sass/_landing.scss */
 .contact-link .text-bg {
   font-size: 113px;
   letter-spacing: 5.6px;
@@ -2005,20 +1997,20 @@ a:hover .arrow-sm {
   z-index: 1;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* line 734, ../sass/_landing.scss */
+  /* line 732, ../sass/_landing.scss */
   .contact-link .text-bg {
     font-size: 75px;
     top: 121px;
   }
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 734, ../sass/_landing.scss */
+  /* line 732, ../sass/_landing.scss */
   .contact-link .text-bg {
     font-size: 60px;
     text-align: center;
   }
 }
-/* line 751, ../sass/_landing.scss */
+/* line 749, ../sass/_landing.scss */
 .contact-link h3 {
   font-size: 36px;
   line-height: 1.94;
@@ -2029,68 +2021,68 @@ a:hover .arrow-sm {
   margin-bottom: 35px;
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 751, ../sass/_landing.scss */
+  /* line 749, ../sass/_landing.scss */
   .contact-link h3 {
     font-size: 24px;
     line-height: 1.4;
     text-align: center;
   }
 }
-/* line 765, ../sass/_landing.scss */
+/* line 763, ../sass/_landing.scss */
 .contact-link a {
   position: relative;
   z-index: 2;
 }
 
-/* line 771, ../sass/_landing.scss */
+/* line 769, ../sass/_landing.scss */
 .footer-content {
   color: #ffffff;
   padding: 45px 0;
   background: #020408;
 }
-/* line 775, ../sass/_landing.scss */
+/* line 773, ../sass/_landing.scss */
 .footer-content h3 {
   font-size: 24px;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* line 775, ../sass/_landing.scss */
+  /* line 773, ../sass/_landing.scss */
   .footer-content h3 {
     font-size: 24px;
     margin-bottom: 20px;
   }
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 775, ../sass/_landing.scss */
+  /* line 773, ../sass/_landing.scss */
   .footer-content h3 {
     font-size: 20px;
     margin-bottom: 20px;
   }
 }
-/* line 786, ../sass/_landing.scss */
+/* line 784, ../sass/_landing.scss */
 .footer-content p {
   font-family: "Roboto Mono Light";
   line-height: 2;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* line 786, ../sass/_landing.scss */
+  /* line 784, ../sass/_landing.scss */
   .footer-content p {
     line-height: 1.4;
     margin-bottom: 15px;
   }
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 786, ../sass/_landing.scss */
+  /* line 784, ../sass/_landing.scss */
   .footer-content p {
     line-height: 1.4;
     margin-bottom: 15px;
   }
 }
-/* line 798, ../sass/_landing.scss */
+/* line 796, ../sass/_landing.scss */
 .footer-content p a {
   text-decoration: underline;
 }
 
-/* line 804, ../sass/_landing.scss */
+/* line 802, ../sass/_landing.scss */
 .copyright {
   background-color: #181c23;
   height: 60px;
@@ -2098,19 +2090,19 @@ a:hover .arrow-sm {
   align-items: center;
   justify-content: space-between;
 }
-/* line 810, ../sass/_landing.scss */
+/* line 808, ../sass/_landing.scss */
 .copyright a {
   color: #80848e;
   font-family: "Maax-Sans-Regular";
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  /* line 810, ../sass/_landing.scss */
+  /* line 808, ../sass/_landing.scss */
   .copyright a {
     font-size: 10px;
   }
 }
 
-/* line 819, ../sass/_landing.scss */
+/* line 817, ../sass/_landing.scss */
 .bottom-link {
   height: 200px;
   display: flex;
@@ -3801,4 +3793,40 @@ a:hover .arrow-sm {
     transform: scaleY(0);
     transform-origin: 0% 150% 0;
   }
+}
+/* line 277, ../sass/_animation.scss */
+.carousel-inner {
+  overflow: visible;
+}
+
+/* line 281, ../sass/_animation.scss */
+.carousel-item {
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1.2s ease-in-out, visibility 1.2s;
+  z-index: -1;
+  position: absolute;
+}
+
+/* line 290, ../sass/_animation.scss */
+.carousel-item.active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 10;
+}
+
+/* line 296, ../sass/_animation.scss */
+.carousel-control-prev {
+  z-index: 20;
+}
+
+/* line 301, ../sass/_animation.scss */
+.carousel-control-next {
+  z-index: 20;
+}
+
+/* line 305, ../sass/_animation.scss */
+.carousel-indicators {
+  z-index: 20;
 }
