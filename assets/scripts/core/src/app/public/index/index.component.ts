@@ -8,6 +8,14 @@ import { WOW } from 'wowjs/dist/wow.min';
 })
 export class IndexComponent implements OnInit {
  
+  config: SwiperOptions = {
+    pagination: '.swiper-pagination',
+    paginationClickable: true,
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    spaceBetween: 30
+  };
+
   constructor() { }
 
   ngOnInit() {
