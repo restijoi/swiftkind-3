@@ -8,4 +8,5 @@ media/
 assets/fonts/
 assets/images/
 assets/scripts/core/node_modules/
-
+assets/scripts/core/dist/
+assets/scripts/core/src/assets/css/style.css
