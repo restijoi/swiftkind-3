@@ -794,15 +794,12 @@ swiper {
   }
 }
 
-.swiper-slide {
-  color: #fff;
-}
 
 
 .testimonies {
   display: flex!important;
   align-items: center;
-  height: 50vh;
+  height: 100vh;
   position: relative;
   @include mobile {
     height: 100vh;
@@ -832,6 +829,8 @@ swiper {
       color: $white;
       font-size: 24px;
       font-family: $Titillium-Extralight;
+      text-align: justify;
+    text-align-last: center;
       @include mobile {
         font-size: 24px;
       }
