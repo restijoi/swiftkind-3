@@ -269,38 +269,7 @@
         font-size: 16px;
         line-height: 1.6;
         @include mobile {
-<<<<<<< HEAD
-            padding-top: 50px;
-        }
-        .svc-label {
-            .number {
-                color: $jade;
-                position: relative;
-                display: flex;
-                &::after {
-                    content: "";
-                    width: 60px;
-                    height: 1px;
-                    position: absolute;
-                    background: $jade;
-                    top: 40%;
-                    left: 30px;
-                    animation: number 2s infinite;
-                }
-            }
-            h2 {
-                font-size: 36px;
-                color: $jade;
-                font-family: $Maax-Sans-Regular;
-                margin-bottom: 40px;
-                margin-top: 20px;
-                @include mobile {
-                    font-size: 24px;
-                }
-            }
-=======
           font-size: 14px;
->>>>>>> fix swiper carousel
         }
       }
       h4 {
@@ -831,12 +800,6 @@ swiper {
 
 
 .testimonies {
-<<<<<<< HEAD
-    display: flex!important;
-    align-items: center;
-    min-height: 100vh;
-    position: relative;
-=======
   display: flex!important;
   align-items: center;
   height: 50vh;
@@ -862,45 +825,9 @@ swiper {
 
     margin: 0 auto;
     text-align: center;
->>>>>>> fix swiper carousel
     @include mobile {
       width: 75%;
     }
-<<<<<<< HEAD
-    .item {
-        
-        .testimony {
-            color: $white;
-            font-size: 24px;
-            font-family: $Titillium-Extralight;
-            @include mobile {
-                font-size: 24px;
-            }
-        }
-        .author {
-            text-align: left;
-            float: right;
-            margin-top: 50px;
-            position: relative;
-            .line {
-                position: absolute;
-                width: 50px;
-                background: $jade;
-                height: 1px;
-                left: -75px;
-                top: 50%;
-            }
-            p {
-                color: $white;
-                font-family: $Roboto-Mono-Thin;
-                font-size: 16px;
-            }
-        }
-    }
-    .carousel-indicators{
-      opacity: 0;
-    }
-=======
     .testimony {
       color: $white;
       font-size: 24px;
@@ -929,7 +856,6 @@ swiper {
       }
     }
   }
->>>>>>> fix swiper carousel
 }
 
 .contact-link {
