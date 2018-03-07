@@ -1,8 +1,10 @@
 import { render } from '../utils/layout';
+
 import { IndexComponent } from '../public/index/index.component';
 import { AboutComponent } from '../public/about/about.component';
 import { ProcessComponent } from '../public/process/process.component';
 import { WorksComponent } from '../public/works/works.component';
+import { ContactComponent } from '../public/contact/contact.component';
 
 
 export const publicStates: Object[] = [
@@ -26,4 +28,9 @@ export const publicStates: Object[] = [
     url  : '/works/',
     views: render(WorksComponent)
   },
+  {
+    name : 'contact',
+    url  : '/contact/',
+    views: render(ContactComponent)
+  }
 ]
