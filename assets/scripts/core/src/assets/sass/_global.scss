@@ -87,6 +87,14 @@ a {
     }
 }
 
+.sk-btn-primary[disabled]{
+    &:hover{
+        background: transparent !important;
+        color: $white !important;
+    }
+
+}
+
 .inverted-link {
     padding: 20px 50px;
     background: transparent;
@@ -294,4 +302,21 @@ a {
     z-index: 9999;
     animation: scroll-down infinite 2s;
     margin: 0 auto;
+}
+
+
+
+//error message
+
+.has-error{
+    input{
+        border-bottom: solid 1px $jade !important;
+        color: $jade !important;
+        @include placeholder{
+            color: $jade !important;
+        }
+    }
+    span{
+        color: $jade !important;
+    }
 }

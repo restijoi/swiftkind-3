@@ -23,44 +23,44 @@
                                 <form [formGroup]="form" (ngSubmit)="send()">
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <div class="form-group">
-                                                <label class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.2s">Hello, my name is</label>
-                                                <input type="text" formControlName="name" class="form-control wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.3s" placeholder="what people call you">
+                                            <div class="form-group" [ngClass]="{'has-error': !fieldIsValid('name')}">
+                                                <label>Hello, my name is</label>
+                                                <input type="text" formControlName="name" class="form-control" placeholder="what people call you">
                                                 <span [hidden]="fieldIsValid('name')">This field is required.</span>
                                             </div>
                                         </div>
                                         <div class="col-md-12">
-                                            <div class="form-group">
-                                                <label class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">I am looking for help with a</label>
-                                                <input type="text" formControlName="content" class="form-control wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s" placeholder="what's the problem (app, design, logo)">
+                                            <div class="form-group" [ngClass]="{'has-error': !fieldIsValid('content')}">
+                                                <label>I am looking for help with</label>
+                                                <input type="text" formControlName="content" class="form-control" placeholder="what's the problem (app, design, logo)">
                                                 <span [hidden]="fieldIsValid('content')">This field is required.</span>                                            
                                             </div>
                                         </div>
                                         <div class="col-md-12">
-                                            <div class="form-group">
-                                                <label class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">My budget is</label>
-                                                <input type="number" formControlName="budget" class="form-control wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.7s" placeholder="$$$$$">
+                                            <div class="form-group" [ngClass]="{'has-error': !fieldIsValid('budget')}">
+                                                <label>My budget is</label>
+                                                <input type="number" formControlName="budget" class="form-control" placeholder="$$$$$">
                                                 <span [hidden]="fieldIsValid('budget')">This field is required.</span>
                                             </div>
                                         </div>
                                         <div class="col-md-12">
-                                            <div class="form-group">
-                                                <label class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">I need it done by</label>
-                                                <input type="date" formControlName="start_date" class="form-control wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.9s" placeholder="July 9, 2017">
+                                            <div class="form-group" [ngClass]="{'has-error': !fieldIsValid('start_date')}">
+                                                <label>I need it done by</label>
+                                                <input type="date" formControlName="start_date" class="form-control" placeholder="July 9, 2017">
                                                 <span [hidden]="fieldIsValid('start_date')">This field is required</span>
                                             </div>
                                         </div>
                                         <div class="col-md-12">
-                                            <div class="form-group">
-                                                <label class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">You can e-mail me at</label>
-                                                <input type="email" formControlName="email" class="form-control wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.1s" placeholder="youremail@domain.com">
+                                            <div class="form-group" [ngClass]="{'has-error': !fieldIsValid('email')}">
+                                                <label>You can e-mail me at</label>
+                                                <input type="email" formControlName="email" class="form-control" placeholder="youremail@domain.com">
                                                 <span [hidden]="fieldIsValid('email')">Please enter a valid email.</span>
                                             </div>
                                         </div>
                                         <div class="col-md-12">
-                                            <div class="form-group">
-                                                <label class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.2s">I'm affiliated with</label>
-                                                <input type="text" formControlName="company" class="form-control wow fadeInUp" data-wow-duration="1s" data-wow-delay="2.3s" placeholder="your company (optional)">
+                                            <div class="form-group" [ngClass]="{'has-error': !fieldIsValid('company')}">
+                                                <label>I'm affiliated with</label>
+                                                <input type="text" formControlName="company" class="form-control" placeholder="your company (optional)">
                                                 <span [hidden]="fieldIsValid('company')">The max characters for this field is limited to (80).</span>
                                             </div>
                                         </div>

@@ -58,6 +58,7 @@
       font-size: 20px;
       letter-spacing: 1px;
       line-height: 1.8;
+      min-height: 80px;
       @include mobile {
         font-size: 16px;
         display: none;
@@ -693,8 +694,8 @@ swiper {
       position: relative;
       img {}
       .img1 {
-        width:250px;
-        height:349px;
+        width: 250px;
+        height: 349px;
         position: absolute;
         opacity: 1;
         @include transition( all,
@@ -702,8 +703,8 @@ swiper {
         0.2s)
       }
       .img2 {
-        width:250px;
-        height:349px;
+        width: 250px;
+        height: 349px;
         opacity: 0;
         @include transition( all,
         ease,
@@ -718,7 +719,7 @@ swiper {
         padding-top: 10px;
         padding-left: 10px;
         opacity: 0;
-        width:250px;
+        width: 250px;
         @include transition( all,
         ease,
         0.2s);
@@ -760,7 +761,7 @@ swiper {
           0.5s);
         }
         .details {
-          width:250px;
+          width: 250px;
           height: 80px;
           opacity: 1;
           @include transition( all,
@@ -830,7 +831,7 @@ swiper {
       font-size: 24px;
       font-family: $Titillium-Extralight;
       text-align: justify;
-    text-align-last: center;
+      text-align-last: center;
       @include mobile {
         font-size: 24px;
       }
