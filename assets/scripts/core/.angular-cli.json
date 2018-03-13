@@ -23,8 +23,8 @@
         "../node_modules/bootstrap/dist/css/bootstrap.min.css",
         "../node_modules/animate.css/animate.css",
         "../node_modules/swiper/dist/css/swiper.css",
+        "../node_modules/ionicons/dist/css/ionicons.css",
         "./assets/css/hover.css",
-        "./assets/css/ionicons.min.css",
         "./assets/css/reset.min.css",
         "./assets/css/style.css"
       ],

@@ -1,7 +1,8 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { WOW } from 'wowjs/dist/wow.min';
 
-import { AppComponent } from '../../app.component';
+import { TeamService } from '../../commons/services/team.service';
+
 
 @Component({
   selector: 'app-about',
@@ -9,23 +10,32 @@ import { AppComponent } from '../../app.component';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent implements OnInit {
+  team;
 
   config: SwiperOptions = {
-    pagination: '.swiper-pagination',
-    paginationClickable: true,
-    nextButton: '.swiper-button-next',
-    prevButton: '.swiper-button-prev',
-    spaceBetween: 30,
-    slidesPerView: 5
+    pagination          : '.swiper-pagination',
+    paginationClickable : true,
+    nextButton          : '.swiper-button-next',
+    prevButton          : '.swiper-button-prev',
+    spaceBetween        : 30,
+    slidesPerView       : 5
   };
 
   constructor(
-    private app : AppComponent
+    private ts: TeamService,
   ) { }
 
   ngOnInit() {
+    this.list();
   }
 
   ngAfterViewInit() { new WOW().init(); }
+
+  list () {
+    this.ts.list()
+      .then(resp => {
+        this.team = resp;
+      })
+  }
 
 }
