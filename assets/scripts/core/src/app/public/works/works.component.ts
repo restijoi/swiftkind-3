@@ -1,6 +1,9 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { WOW } from 'wowjs/dist/wow.min';
 
+import { ProjectsService } from '../../commons/services/projects.service';
+
+
 @Component({
   selector: 'app-works',
   templateUrl: './works.component.html',
@@ -8,7 +11,9 @@ import { WOW } from 'wowjs/dist/wow.min';
 })
 export class WorksComponent implements OnInit, AfterViewInit {
 
-  constructor() { }
+  constructor(
+    private ps: ProjectsService
+  ) { }
 
   ngOnInit() {
   }
