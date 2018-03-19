@@ -38,3 +38,15 @@ class Link(models.Model):
 
     def __str__(self):
         return f"{self.member} ({self.name})"
+
+
+class Feedback(models.Model):
+    """ feedback
+    """
+    name = models.CharField(max_length=200)
+    title = models.CharField(max_length=250)
+
+    content = models.TextField()
+
+    def __str__(self):
+        return f"{self.name} ({self.title})"

@@ -423,34 +423,18 @@
        <div class="container">
             <swiper [config]="config">
                 <div class="item swiper-wrapper">
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" *ngFor="let item of feedback">
                         <p class="testimony">
-                            To be a consistent winner means preparing not just one day, one month, or even one year — but for a lifetime.
+                            {{ item.content }}
                         </p>
                         <div class="author">
                             <span class="line"></span>
                             <div>
                                 <p class="name">
-                                    Dan Red
+                                    {{ item.name }}
                                 </p>
                                 <p class="designation">
-                                    CEO, Company Inc.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item swiper-slide">
-                        <p class="testimony">
-                            "We selected Swiftkind as a full-stack developer to help launch our long-envisioned web app: Artsparkr.com. Having completed numerous software projects before this one, we were aware of the inherent challenges. Earvin and his team stayed on top of everything. Even when our requirements changed, the developers offered additional options and advice which demonstrated not only their understanding of the technical aspects, but also of our requirements as a real-world customer dwelling outside the development cycle."
-                        </p>
-                        <div class="author">
-                            <span class="line"></span>
-                            <div>
-                                <p class="name">
-                                    Jason Weekes
-                                </p>
-                                <p class="designation">
-                                    COO at Artsparkr
+                                    {{ item.title }}
                                 </p>
                             </div>
                         </div>

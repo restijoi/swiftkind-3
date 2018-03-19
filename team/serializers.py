@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Member, Link
+from .models import Member, Link, Feedback
 
 
 class LinkSerializer(serializers.ModelSerializer):
@@ -33,3 +33,11 @@ class MemberSerializer(serializers.ModelSerializer):
     def get_links(self, obj):
         return LinkSerializer(
             Link.objects.filter(member=obj), many=True).data
+
+
+class FeedbackSerializer(serializers.ModelSerializer):
+    """ feedback serializer
+    """
+    class Meta:
+        model = Feedback
+        fields = ('id', 'name', 'title', 'content')

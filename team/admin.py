@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Member, Link
+from .models import Member, Link, Feedback
 
 
 class LinkAdmin(admin.StackedInline):
@@ -13,4 +13,10 @@ class MemberAdmin(admin.ModelAdmin):
     inlines = (LinkAdmin,)
 
 
+class FeedbackAdmin(admin.ModelAdmin):
+    model = Feedback
+    list_display = ('name', 'title', 'content')
+
+
 admin.site.register(Member, MemberAdmin)
+admin.site.register(Feedback, FeedbackAdmin)
