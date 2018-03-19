@@ -21,4 +21,9 @@ export class ProjectsService {
     ;
   }
 
+  detail (id) {
+    return this.http.get(PROJECTS + id + '/')
+      .toPromise()
+  }
+
 }

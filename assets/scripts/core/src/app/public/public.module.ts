@@ -12,6 +12,7 @@ import { AboutComponent } from './about/about.component';
 import { ProcessComponent } from './process/process.component';
 import { WorksComponent } from './works/works.component';
 import { ContactComponent } from './contact/contact.component';
+import { ProjectComponent } from './project/project.component';
 
 @NgModule({
   imports: [
@@ -20,6 +21,6 @@ import { ContactComponent } from './contact/contact.component';
     SwiperModule,
     ReactiveFormsModule
   ],
-  declarations: [IndexComponent, TypingAnimationDirective, AboutComponent, ProcessComponent, WorksComponent, ContactComponent]
+  declarations: [IndexComponent, TypingAnimationDirective, AboutComponent, ProcessComponent, WorksComponent, ContactComponent, ProjectComponent]
 })
 export class PublicModule { }

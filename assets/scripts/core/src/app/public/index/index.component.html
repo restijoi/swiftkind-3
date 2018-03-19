@@ -294,7 +294,7 @@
                                     </li>
                                 </ul>
                                 <p class="title">{{ project.name }}</p>
-                                <a uiSref="" class="link-bordered hvr-sweep-to-right">
+                                <a [uiSref]="project" [uiParams]="{projectId:project.id}" class="link-bordered hvr-sweep-to-right">
                                     VIEW CASE STUDIES 
                                     <img src="/static/images/arrow-right.svg" class="arrow-sm">
                                 </a>

@@ -5,6 +5,7 @@ import { AboutComponent } from '../public/about/about.component';
 import { ProcessComponent } from '../public/process/process.component';
 import { WorksComponent } from '../public/works/works.component';
 import { ContactComponent } from '../public/contact/contact.component';
+import { ProjectComponent } from '../public/project/project.component';
 
 
 export const publicStates: Object[] = [
@@ -27,6 +28,11 @@ export const publicStates: Object[] = [
     name : 'works',
     url  : '/works/',
     views: render(WorksComponent)
+  },
+  {
+    name : 'project',
+    url  : '/works/:projectId/',
+    views: render(ProjectComponent)
   },
   {
     name : 'contact',
