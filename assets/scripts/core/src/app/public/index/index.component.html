@@ -281,130 +281,27 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-md-6 no-padding">
+               <div class="col-md-6 no-padding" *ngFor="let project of ps.projects">
                     <div class="img-wrapper blackpearl">
                         <div class="content-holder wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.4s">
                             <div class="img-holder">
-                                <img src="/static/images/layer-4.png" class="img-responsive img1">
-                                <img src="/static/images/projects/book-ipad2.png" class="img-responsive img2">
+                                <img [src]="img.image" *ngFor="let img of project.images" [ngClass]="{'img1': img.is_cover, 'img2': !img.is_cover}" class="img-responsive">
                             </div>
                             <div class="content-wrapper">
                                 <ul class="techs">
-                                    <li>
-                                        <p>UI/UX</p>
-                                    </li>
-                                    <li>
-                                        <p>PYTHON</p>
-                                    </li>
-                                    <li>
-                                        <p>DJANGO</p>
-                                    </li>
-                                    <li>
-                                        <p>ANGULAR</p>
+                                    <li *ngFor="let stack of project.stacks">
+                                        <p>{{ stack.name }}</p>
                                     </li>
                                 </ul>
-                                <p class="title">BOOK APP</p>
-                                <a uiSref="bookapp" class="link-bordered hvr-sweep-to-right">
+                                <p class="title">{{ project.name }}</p>
+                                <a uiSref="" class="link-bordered hvr-sweep-to-right">
                                     VIEW CASE STUDIES 
                                     <img src="/static/images/arrow-right.svg" class="arrow-sm">
                                 </a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6 no-padding">
-                    <div class="img-wrapper midnight">
-                        <div class="content-holder wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.6s">
-                            <div class="img-holder">
-                                <img src="/static/images/layer-5.png" class="img-responsive img1">
-                                <img src="/static/images/tracker-1.png" class="img-responsive img2">
-                            </div>
-                            <div class="content-wrapper">
-                                <ul class="techs">
-                                    <li>
-                                        <p>UI/UX</p>
-                                    </li>
-                                    <li>
-                                        <p>PYTHON</p>
-                                    </li>
-                                    <li>
-                                        <p>DJANGO</p>
-                                    </li>
-                                    <li>
-                                        <p>ANGULAR</p>
-                                    </li>
-                                </ul>
-                                <p class="title">TRACKR.</p>
-                                <a uiSref="trackr" class="link-bordered hvr-sweep-to-right">
-                                    VIEW CASE STUDIES 
-                                    <img src="/static/images/arrow-right.svg" class="arrow-sm">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 no-padding">
-                    <div class="img-wrapper midnight">
-                        <div class="content-holder wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.8s">
-                            <div class="img-holder">
-                                <img src="/static/images/layer-6.png" class="img-responsive img1">
-                                <img src="/static/images/projects/learn-ipad1.png" class="img-responsive img2">
-                            </div>
-                            <div class="content-wrapper">
-                                <ul class="techs">
-                                    <li>
-                                        <p>UI/UX</p>
-                                    </li>
-                                    <li>
-                                        <p>PYTHON</p>
-                                    </li>
-                                    <li>
-                                        <p>DJANGO</p>
-                                    </li>
-                                    <li>
-                                        <p>ANGULAR</p>
-                                    </li>
-                                </ul>
-                                <p class="title">SWIFTLEARN</p>
-                                <a uiSref="learn" class="link-bordered hvr-sweep-to-right">
-                                    VIEW CASE STUDIES 
-                                    <img src="/static/images/arrow-right.svg" class="arrow-sm">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 no-padding">
-                    <div class="img-wrapper blackpearl">
-                        <div class="content-holder wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="1s">
-                            <div class="img-holder">
-                                <img src="/static/images/layer-7.png" class="img-responsive img1">
-                                <img src="/static/images/projects/jobs-ipad2.png" class="img-responsive img2">
-                            </div>
-                            <div class="content-wrapper">
-                                <ul class="techs">
-                                   <li>
-                                        <p>UI/UX</p>
-                                    </li>
-                                    <li>
-                                        <p>PYTHON</p>
-                                    </li>
-                                    <li>
-                                        <p>DJANGO</p>
-                                    </li>
-                                    <li>
-                                        <p>ANGULAR</p>
-                                    </li>
-                                </ul>
-                                <p class="title">JOBS</p>
-                                <a uiSref="jobs" class="link-bordered hvr-sweep-to-right">
-                                    VIEW CASE STUDIES 
-                                    <img src="/static/images/arrow-right.svg" class="arrow-sm">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                </div> 
             </div>
             <div class="bottom-link">
                <a uiSref="works" class="primary-link">VIEW MORE <strong>CASE STUDIES</strong>  <img src="/static/images/arrow-right.svg" class="arrow-sm"></a>
@@ -423,7 +320,7 @@
        <div class="container">
             <swiper [config]="config">
                 <div class="item swiper-wrapper">
-                    <div class="swiper-slide" *ngFor="let item of feedback">
+                    <div class="swiper-slide" *ngFor="let item of fbs.feedback">
                         <p class="testimony">
                             {{ item.content }}
                         </p>

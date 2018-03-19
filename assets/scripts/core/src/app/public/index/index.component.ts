@@ -2,6 +2,7 @@ import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { WOW } from 'wowjs/dist/wow.min';
 
 import { FeedbackService } from '../../commons/services/feedback.service';
+import { ProjectsService } from '../../commons/services/projects.service';
 
 @Component({
   selector: 'app-index',
@@ -9,7 +10,6 @@ import { FeedbackService } from '../../commons/services/feedback.service';
   styleUrls: ['./index.component.scss']
 })
 export class IndexComponent implements OnInit {
-  feedback;
 
   config: SwiperOptions = {
     pagination: '.swiper-pagination',
@@ -20,20 +20,12 @@ export class IndexComponent implements OnInit {
   };
 
   constructor(
-    private fbs: FeedbackService
+    private fbs: FeedbackService,
+    private ps: ProjectsService
   ) { }
 
-  ngOnInit() {
-    this.list();
-  }
+  ngOnInit() {}
 
   ngAfterViewInit() { new WOW().init(); }
-
-  list () {
-    this.fbs.list()
-      .then(resp => {
-        this.feedback = resp;
-      })
-  }
 
 }

@@ -10,7 +10,6 @@ import { TeamService } from '../../commons/services/team.service';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent implements OnInit {
-  team;
 
   config: SwiperOptions = {
     pagination          : '.swiper-pagination',
@@ -25,17 +24,7 @@ export class AboutComponent implements OnInit {
     private ts: TeamService,
   ) { }
 
-  ngOnInit() {
-    this.list();
-  }
+  ngOnInit() {}
 
   ngAfterViewInit() { new WOW().init(); }
-
-  list () {
-    this.ts.list()
-      .then(resp => {
-        this.team = resp;
-      })
-  }
-
 }

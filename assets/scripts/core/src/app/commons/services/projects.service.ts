@@ -1,23 +1,22 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { TEAM } from '../../constants/endpoints';
-
+import { PROJECTS } from '../../constants/endpoints';
 
 @Injectable()
-export class TeamService {
-  team;
+export class ProjectsService {
+  projects;
 
   constructor(
     private http: HttpClient
   ) {
-    // get the list of team upon loading
+    // get the list of projects upon loading
     this.list().then(resp => {
-      this.team = resp;
+      this.projects = resp;
     });
   }
 
   list () {
-    return this.http.get(TEAM)
+    return this.http.get(PROJECTS)
       .toPromise()
     ;
   }
