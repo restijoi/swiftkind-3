@@ -12,3 +12,4 @@ export const FEEDBACK = '/api/team/feedback/';
 /* PROJECTS ENDPOINT
  */
 export const PROJECTS = '/api/projects/';
+export const GALLERY = '/api/projects/gallery/';

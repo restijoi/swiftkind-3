@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Project, Resource, Image, Stack
+from .models import Project, Resource, Image, Stack, Mockup, Gallery
 
 
 class ResourceAdmin(admin.StackedInline):
@@ -30,5 +30,21 @@ class StackAdmin(admin.ModelAdmin):
     model = Stack
 
 
+class MockupAdmin(admin.StackedInline):
+    model = Mockup
+    extra = 1
+
+
+class GalleryAdmin(admin.ModelAdmin):
+    model = Gallery
+    list_display = (
+        'name',
+        'date_designed',
+    )
+
+    inlines = (MockupAdmin,)
+
+
 admin.site.register(Project, ProjectAdmin)
 admin.site.register(Stack, StackAdmin)
+admin.site.register(Gallery, GalleryAdmin)

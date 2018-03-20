@@ -70,6 +70,9 @@ a {
              @include transition ( all, 0.3s, ease);
         }
     }
+    .back-arrow{
+        transform: rotate(180deg);
+    }
 }
 
 .sk-btn-primary {
@@ -85,14 +88,6 @@ a {
         color: $black-pearl;
         @include transition(all, ease, 0.5s);
     }
-}
-
-.sk-btn-primary[disabled]{
-    &:hover{
-        background: transparent !important;
-        color: $white !important;
-    }
-
 }
 
 .inverted-link {
@@ -255,7 +250,7 @@ a {
 .fit-content-wrapper {
     position: relative;
     width: -moz-available;
-    //width: -webkit-fill-available;
+    width: -webkit-fill-available;
 }
 
 //sections
@@ -302,21 +297,4 @@ a {
     z-index: 9999;
     animation: scroll-down infinite 2s;
     margin: 0 auto;
-}
-
-
-
-//error message
-
-.has-error{
-    input{
-        border-bottom: solid 1px $jade !important;
-        color: $jade !important;
-        @include placeholder{
-            color: $jade !important;
-        }
-    }
-    span{
-        color: $jade !important;
-    }
 }

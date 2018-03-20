@@ -1,4 +1,6 @@
 from django.db import models
+#from django.contrib.postgres.fields import JSONField
+
 from .utils import get_directory
 
 
@@ -50,3 +52,18 @@ class Feedback(models.Model):
 
     def __str__(self):
         return f"{self.name} ({self.title})"
+
+
+# class ContributionLog(models.Model):
+#     """ contributions
+#     """
+#     GITHUB = 'github'
+#     BITBUCKET = 'bitbucket'
+#     GITLAB = 'gitlab'
+
+#     source = models.CharField(max_length=50, choices=SOURCES, default=GITHUB)
+#     content = JSONField()
+#     date_created = models.DateTimeField(auto_now_add=True)
+
+#     def __str__(self):
+#         return f"({self.source}) {self.date_created}"

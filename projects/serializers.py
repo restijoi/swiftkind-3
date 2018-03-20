@@ -1,5 +1,12 @@
 from rest_framework import serializers
-from .models import Project, Resource, Image, Stack
+from .models import (
+    Project,
+    Resource,
+    Image,
+    Stack,
+    Mockup,
+    Gallery,
+)
 
 
 class ResourceSerializer(serializers.ModelSerializer):
@@ -18,8 +25,6 @@ class StackSerializer(serializers.ModelSerializer):
     class Meta:
         model = Stack
         fields = ('id', 'name')
-
-
 
 
 class ProjectSerializer(serializers.ModelSerializer):
@@ -57,3 +62,32 @@ class ProjectSerializer(serializers.ModelSerializer):
     def get_stacks(self, instance):
         return StackSerializer(
             Stack.objects.filter(project=instance), many=True).data
+
+
+class MockupSerializer(serializers.ModelSerializer):
+    """ gallery images serializer
+    """
+    class Meta:
+        model = Mockup
+        fields = ('id', 'image', 'date_uploaded')
+
+
+class GallerySerializer(serializers.ModelSerializer):
+    """ gallery serializer
+    """
+    mockups = serializers.SerializerMethodField()
+
+    class Meta:
+        model = Gallery
+        fields = (
+            'id',
+            'name',
+            'slug',
+            'description',
+            'date_designed',
+            'mockups',
+        )
+
+    def get_mockups(self, instance):
+        return MockupSerializer(
+            Mockup.objects.filter(gallery=instance), many=True).data

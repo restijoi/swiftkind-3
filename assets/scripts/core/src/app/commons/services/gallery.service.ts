@@ -1,30 +1,29 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { PROJECTS } from '../../constants/endpoints';
+import { GALLERY } from '../../constants/endpoints';
 
 
 @Injectable()
-export class ProjectsService {
-  projects;
+export class GalleryService {
+  public gallery;
 
   constructor(
     private http: HttpClient
   ) {
-    // get the list of projects upon loading
+    // get the list of project mockups
     this.list().then(resp => {
-      this.projects = resp;
+      this.gallery = resp;
     });
   }
 
   list () {
-    return this.http.get(PROJECTS)
+    return this.http.get(GALLERY)
       .toPromise()
     ;
   }
 
-  detail (id) {
-    return this.http.get(PROJECTS + id + '/')
+  detail (slug) {
+    return this.http.get(GALLERY + slug + '/')
       .toPromise()
   }
-
 }

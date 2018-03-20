@@ -13,6 +13,7 @@ import { ProcessComponent } from './process/process.component';
 import { WorksComponent } from './works/works.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProjectComponent } from './project/project.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 @NgModule({
   imports: [
@@ -21,6 +22,6 @@ import { ProjectComponent } from './project/project.component';
     SwiperModule,
     ReactiveFormsModule
   ],
-  declarations: [IndexComponent, TypingAnimationDirective, AboutComponent, ProcessComponent, WorksComponent, ContactComponent, ProjectComponent]
+  declarations: [IndexComponent, TypingAnimationDirective, AboutComponent, ProcessComponent, WorksComponent, ContactComponent, ProjectComponent, GalleryComponent]
 })
 export class PublicModule { }
