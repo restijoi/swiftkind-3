@@ -317,22 +317,24 @@
             </div>
         </div>
 
-       <div class="container">
+       <div class="container-fluid">
             <swiper [config]="config">
                 <div class="item swiper-wrapper">
                     <div class="swiper-slide" *ngFor="let item of fbs.feedback">
-                        <p class="testimony">
-                            {{ item.content }}
-                        </p>
-                        <div class="author">
-                            <span class="line"></span>
-                            <div>
-                                <p class="name">
-                                    {{ item.name }}
-                                </p>
-                                <p class="designation">
-                                    {{ item.title }}
-                                </p>
+                        <div class="testimony-contents">
+                            <p class="testimony">
+                                {{ item.content }}
+                            </p>
+                            <div class="author">
+                                <span class="line"></span>
+                                <div>
+                                    <p class="name">
+                                        {{ item.name }}
+                                    </p>
+                                    <p class="designation">
+                                        {{ item.title }}
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
